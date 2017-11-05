@@ -1,0 +1,54 @@
+.box-balloon {
+  position: relative;
+}
+
+.box-balloon-triangle {
+  background: $box-bg;
+  border: 1px solid $box-border;
+  border-left: 0;
+  border-top: 0;
+  bottom: -10px;
+  height: 20px;
+  left: $spacer * 4;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 20px;
+}
+
+.balloon-author {
+  margin-top: $spacer * 2;
+  padding-left: $spacer * 3;
+}
+
+.balloon-author-photo {
+  float: left;
+  height: 50px;
+  position: relative;
+  width: 50px;
+
+  img {
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.balloon-author-photo-shadow {
+  border: 1px solid $balloon-author-photo-text;
+  border-radius: 50px;
+  box-shadow: inset 0 2px 0 0 $balloon-author-photo-shadow;
+  height: 50px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 50px;
+}
+
+.balloon-author-name {
+  font-weight: bold;
+  margin-left: 60px;
+}
+
+.balloon-author-position {
+  margin-left: 60px;
+}

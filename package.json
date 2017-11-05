@@ -1,0 +1,16 @@
+{
+  "name": "Charming_Startup",
+  "version": "0.8.0",
+  "description": "A business template built with Charming",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexander Rechsteiner",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "font-awesome": "^4.7",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.5"
+  }
+}

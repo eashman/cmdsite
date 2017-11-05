@@ -1,0 +1,21 @@
+/* Some custom styles for the lander example, that do not belong into the Charming framework itself */
+
+.example-block-bg-mainboard {
+  background-image: url('../assets/images/dr-bg-1200.png');
+  height: 752px;
+}
+
+.button-text {
+  font-family: "Arial Bold", Gadget, sans-serif;
+  font-style: normal;
+  font-size: 15px ! important;
+  border: 0;
+  color: white;
+  background-color: #7c2c83;
+}
+
+h1 {
+  color: #008c99;
+}
+  /* resize: both; */
+

@@ -1,0 +1,204 @@
+// Charming color variables that are used in the Bootstrap build as well
+// Variables that affect the Bootstrap build should be marked with //BS
+
+// --------------- Brand and accent colors --------------------- //
+@import 'functions';
+
+// Accent colors
+// Used to generate: bg-accent-X, text-accent-X, ...
+$accents: (
+  1: (
+    color: #31a742,
+    border: #239834,
+    gstart: #34bc48,
+    gstop: #2caa3f,
+    contrast: #fff
+  ),
+  2: (
+    color: #353844,
+    border: #24262c,
+    gstart: #353844,
+    gstop: #444860,
+    contrast: #d8d9dd
+  ),
+  3: (
+    color: #3b3b3b,
+    gstart: #3b3b3b,
+    gstop: #2e2e2e,
+    border: #272727,
+    contrast: #fff
+  )
+) !default;
+
+// Fancy UI gradients
+// Used to generate: bg-gradient-X, ...
+$gradients: (
+  1: (
+    gstart: #353844,
+    gstop: #444860
+  ),
+  2: (
+    gstart: #35bd49,
+    gstop: #7ec989
+  ),
+  98: (
+    // Dashboard background up for changes
+    gstart: #c2cad1,
+    gstop: #8e9eab
+  )
+) !default;
+
+$body-text: #373a3c !default;
+$body-text-soft: #828282 !default;
+
+// Dark and light colors (text color for dark/light elements)
+$dark-color: #353844 !default;
+$dark-gstart: #353844 !default;
+$dark-gstop: #444860 !default;
+$dark-contrast: #fff !default;
+$dark-separator: #4e5161 !default;
+$dark-contrast-highlight: #b8f5c3 !default;
+
+$navbar-dark-color: rgba(255, 255, 255, .9) !default; //BS
+$navbar-dark-hover-color: rgba(255, 255, 255, .95) !default; //BS
+$navbar-dark-toggler-border-color: rgba(255, 255, 255, .1) !default; //BS
+
+$light-color: #f9f9f9 !default;
+$light-gstart: #fff !default;
+$light-gstop: #f9f9f9 !default;
+$light-contrast: #343434 !default;
+$light-separator: #c8c8c8 !default;
+$light-contrast-highlight: #31a742 !default;
+
+// -------------- Component colors ------------------- //
+// Blocks
+$block-bg-gstart: #fff !default;
+$block-bg-gstop: #f6f6f6 !default;
+$block-border: #cbcdd9 !default;
+
+$block-dark-text: $dark-contrast;
+$block-dark-gstart: $dark-gstart;
+$block-dark-gstop: $dark-gstop;
+
+$block-callout-bg: rgba(157, 162, 186, .5) !default;
+
+// Boxes
+$box-text: $body-text;
+$box-border: #c8c8c8 !default;
+$box-bg: #fafafa !default;
+$box-footer-bg: #f8f8f8 !default;
+$box-block-codesample-text: #fff;
+$box-block-codesample-bg: #2e2e2e;
+
+// Balloons
+$balloon-author-photo-text: #a2a2a2;
+$balloon-author-photo-shadow: (255, 255, 255, .47);
+
+// Buttons
+$colored-button-text-shadow: rgba(0, 0, 0, .07) !default;
+
+// Blog
+$blog-header-small-text: #fff !default;
+$blog-header-huge-text: #a4a9bc !default;
+
+// Dashboard
+$dash-primary-bg: #353844 !default;
+$dash-primary-text: #d8d9dd !default;
+$dash-primary-bg-engraving-border: #2d303a !default;
+$dash-primary-bg-engraving-shadow: #454851 !default;
+
+$dash-toolbar-bg: $dash-primary-bg !default;
+$dash-toolbar-text: $dash-primary-text !default;
+
+$dash-toolbar-search-bg: darken($dash-primary-bg, 2%) !default;
+$dash-toolbar-search-shadow: rgba(0, 0, 0, .26) !default;
+$dash-toolbar-search-text: #b9becc !default;
+
+$dash-titlebar-bg: #fff !default;
+$dash-titlebar-text: $body-text !default;
+$dash-titlebar-border: $box-border !default;
+
+$dash-nav-item-text: $dash-primary-text !default;
+$dash-nav-item-icon: accent(1, color) !default;
+$dash-nav-item-icon-shadow: rgba(0, 0, 0, .34) !default;
+
+$dash-nav-item-active-bg: #2e323a !default;
+$dash-nav-item-active-bg-shadow: darken($dash-nav-item-active-bg, 1%) !default;
+$dash-nav-item-active-border: accent(1, color) !default;
+$dash-nav-mobile-shadow: rgba(0, 0, 0, .28) !default;
+$dash-nav-controller-bg: rgba(255, 255, 255, .1) !default;
+$dash-nav-tools-border: $dash-primary-bg-engraving-border !default;
+$dash-nav-toggler-border: rgba(255, 255, 255, .1) !default;
+
+$dash-app-bg: $block-bg-gstop !default;
+
+// Features
+$img-simple-border: #2d3842 !default;
+
+// Footer
+$ftr-dark-text: $dark-contrast !default;
+$ftr-dark-bg: $dark-color !default;
+$ftr-dark-separator: $dark-separator !default;
+$ftr-dark-highlight: $dark-contrast-highlight !default;
+
+$ftr-light-text: $light-contrast !default;
+$ftr-light-bg: $light-color !default;
+$ftr-light-separator: $light-separator !default;
+$ftr-light-highlight: $light-contrast-highlight !default;
+
+//Forms
+$charming-form-input-bg: rgba(255, 255, 255, .8) !default;
+
+// Merits
+$merits-dark-gstart: $dark-gstart !default;
+$merits-dark-gstop: $dark-gstop !default;
+$merits-dark-text: $dark-contrast !default;
+$merits-dark-separator: $dark-separator !default;
+$merits-dark-icon: #35bd49 !default;
+
+$merits-light-gstart: $light-gstart !default;
+$merits-light-gstop: $light-gstop !default;
+$merits-light-text: $light-contrast !default;
+$merits-light-separator: $light-separator !default;
+$merits-light-icon: $merits-dark-icon !default;
+
+// Pricing tables
+$pct-border: #c8c8c8 !default;
+$pct-bg-gradient-start: #f9f9f9 !default;
+$pct-bg-gradient-stop: #f2f2f2 !default;
+$pct-list-bullet: #d0d5d9 !default;
+$pct-box-shadow: rgba(0, 0, 0, .02) !default;
+
+// Navigation
+$navbar-light-color:                #343434 !default; //BS
+$navbar-light-active-color:         #4c4c4c !default; //BS
+
+$navbar-dark-color:                 #fff !default; //BS
+$navbar-dark-hover-color:           darken($navbar-dark-color, 13%) !default; //BS
+$navbar-dark-active-color:          #fff !default; //BS
+$navbar-dark-disabled-color:        #fff !default; //BS
+$navbar-dark-mobile-nav-bg: rgba(255, 255, 255, .2) !default;
+$navbar-dark-mobile-nav-highlight: rgba(255, 255, 255, .4) !default;
+
+$navbar-light-mobile-nav-bg: rgba(0, 0, 0, .06) !default;
+$navbar-light-mobile-nav-highlight: rgba(0, 0, 0, .10) !default;
+
+// ---------------- BOOTSTRAP --------------------------
+
+$green: #35bd49 !default;
+$cyan: #4ac1ee !default;
+$orange: #fba91e !default;
+$red: #fa2840 !default;
+
+// Forms
+$custom-control-indicator-checked-bg:         #494949 !default; //BS
+$custom-checkbox-indicator-indeterminate-bg: #494949 !default; //BS
+
+// scss-lint:disable ColorVariable
+$custom-control-indicator-focus-box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #494949 !default; //BS
+// scss-lint:enable ColorVariable
+
+$input-focus-border-color:   #898989 !default; //BS
+
+// Links
+$link-color: accent(1, color) !default; //BS

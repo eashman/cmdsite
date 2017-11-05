@@ -1,0 +1,369 @@
+.dash {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  &:not(.dash-boxed) {
+    min-height: 100vh;
+  }
+}
+
+.dash-app {
+  background-color: $dash-app-bg;
+  flex: 1;
+  vertical-align: top;
+
+  &.hide {
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+}
+
+.dash-nav {
+  background-color: $dash-primary-bg;
+  display: none;
+  flex: 0 0 206px;
+  flex-direction: column;
+  position: relative;
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+  }
+
+  @include media-breakpoint-down(md) {
+    &.show {
+      display: flex;
+      flex-basis: 100%;
+    }
+  }
+
+  header {
+    align-items: center;
+    border-bottom: 1px solid $dash-primary-bg-engraving-border;
+    border-right: 1px solid $dash-primary-bg-engraving-border;
+    box-shadow: 1px 0 0 0 $dash-primary-bg-engraving-shadow,
+                0 1px 0 0 $dash-primary-bg-engraving-shadow;
+    color: $dash-primary-text;
+    display: flex;
+    height: 72px;
+    padding: $spacer * 1.5;
+    position: relative;
+  }
+
+}
+
+.dash-nav-toggler {
+  @include border-radius($navbar-toggler-border-radius);
+
+  align-items: center;
+  background: transparent; // remove default button style
+  border: $border-width solid $dash-nav-toggler-border; // remove default button style
+  display: flex;
+  flex-shrink: 0;
+  height: 36px;
+  justify-content: center;
+  padding: 0;
+  width: 36px;
+
+  @include hover-focus {
+    text-decoration: none;
+  }
+
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+
+  .dash-nav-toggler-icon {
+    background-image: $navbar-dark-toggler-icon-bg;
+    display: inline-block;
+    height: 1.5em;
+    width: 1.5em;
+  }
+
+}
+
+.dash-nav-logo {
+  font-size: 20px;
+  font-weight: bold;
+
+  @include media-breakpoint-down(md) {
+    margin-left: $spacer;
+  }
+
+  a,
+  a:hover,
+  a:active,
+  a:focus {
+    color: $dash-primary-text;
+    text-decoration: none;
+  }
+}
+
+.dash-nav-logo-link {
+  position: relative;
+
+  &::before {
+    background-color: $dash-nav-item-icon;
+    bottom: -5px;
+    box-shadow: 1px 1px $dash-nav-item-icon-shadow;
+    content: '';
+    height: 2px;
+    position: absolute;
+    width: 30px;
+  }
+}
+
+.dash-nav-tools {
+  border-top: 1px solid $dash-nav-tools-border;
+  box-shadow: inset 0 1px 0 0 $dash-primary-bg-engraving-shadow;
+  margin-top: auto;
+  padding: $spacer;
+
+  .icon {
+    font-size: 25px;
+  }
+
+  a,
+  a:hover,
+  a:active,
+  a:focus {
+    color: $dash-primary-text;
+    text-decoration: none;
+  }
+}
+
+.dash-nav-list {
+  list-style: none;
+  margin-top: 19px;
+  padding: 0;
+}
+
+.dash-nav-item {
+  color: $dash-primary-text;
+  line-height: 24px;
+  vertical-align: middle;
+
+  .icon {
+    color: $dash-nav-item-icon;
+    font-size: 24px;
+    text-shadow: 1px 1px 0 $dash-nav-item-icon-shadow;
+    vertical-align: middle;
+  }
+
+  .badge {
+    margin-top: 5px;
+  }
+
+  a,
+  a:hover,
+  a:active,
+  a:focus {
+    border-left: 4px solid transparent;
+    color: $dash-nav-item-text;
+    display: block;
+    padding: $spacer;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: $dash-nav-item-active-bg;
+    border-color: $dash-nav-item-active-bg;
+  }
+
+  &.active {
+    a {
+      background-color: $dash-nav-item-active-bg;
+      border-color: $dash-nav-item-active-border;
+      box-shadow: inset 1px 1px $dash-nav-item-active-bg-shadow;
+    }
+  }
+}
+
+.dash-nav-item-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dash-toolbar {
+  align-items: center;
+  background: $dash-toolbar-bg;
+  color: $dash-toolbar-text;
+  display: flex;
+  flex-flow: row nowrap;
+  min-height: 72px;
+  padding: $spacer * 1.5;
+}
+
+.dash-toolbar-searchandnav {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.dash-toolbar-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  @include media-breakpoint-up(md) {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  @include  media-breakpoint-down(md) {
+    padding-left: $spacer;
+  }
+}
+
+.dash-toolbar-dropdown {
+  flex-shrink: 0;
+  margin-left: auto;
+
+  .dropdown-toggle,
+  .dropdown-toggle:hover,
+  .dropdown-toggle:active,
+  .dropdown-toggle:focus {
+    color: $dash-toolbar-text;
+    text-decoration: none;
+  }
+}
+
+.dash-toolbar-form {
+  display: inline-block;
+  flex-shrink: 1;
+  margin-right: $spacer;
+
+  @include media-breakpoint-down(md) {
+    flex-grow: 1;
+    margin-left: $spacer;
+  }
+
+}
+
+.dash-toolbar-input {
+  background-color: $dash-toolbar-search-bg;
+  border: 0;
+  border-radius: 100px;
+  box-shadow: inset 1px 1px 1px 0 $dash-toolbar-search-shadow;
+  color: $dash-toolbar-search-text;
+  height: $spacer * 3;
+  padding-left: 20px;
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    width: 300px;
+  }
+}
+
+.dash-titlebar {
+  align-items: stretch;
+  background-color: $dash-titlebar-bg;
+  border-bottom: 1px solid $dash-titlebar-border;
+  color: $dash-titlebar-text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 72px;
+  padding: $spacer $spacer * 2;
+
+  @include media-breakpoint-up(md) {
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.dash-titlebar-title {
+  font-size: 20px;
+}
+
+.dash-titlebar-badges {
+  font-size: 14px;
+  margin-left: $spacer;
+
+  .badge {
+    font-size: 14px;
+  }
+}
+
+.badge-transparent {
+  color: $body-text;
+}
+
+.dash-boxes {
+  padding: $spacer * 1 $spacer * 2;
+
+  .box {
+    margin-bottom: $spacer * 1;
+    margin-top: $spacer * 1;
+  }
+}
+
+.dash-boxed {
+  @media screen and (min-width: 1400px) {
+    margin-top: 100px;
+    max-width: 1366px;
+
+    .dash-app {
+      border-radius: 0 $border-radius $border-radius 0;
+    }
+
+    .dash-nav {
+      border-radius: $border-radius 0 0 $border-radius;
+    }
+
+    .dash-nav-tools {
+      border-radius: 0 0 0 $border-radius;
+    }
+
+    .dash-nav-logo {
+      border-radius: $border-radius 0 0;
+    }
+
+    .dash-boxes {
+      border-radius: 0 0 $border-radius;
+    }
+
+    .dash-toolbar {
+      border-radius: 0 $border-radius 0 0;
+    }
+  }
+}
+
+/** Fixed navbars **/
+.dash-fixed {
+  @include media-breakpoint-up(lg) {
+    .dash-nav {
+      bottom: 0;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 206px;
+      z-index: 999;
+    }
+  }
+
+  .dash-toolbar {
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+
+    @include media-breakpoint-up(lg) {
+      left: 207px;
+    }
+  }
+
+  .dash-app {
+    main {
+      margin-top: 72px;
+
+      @include media-breakpoint-up(lg) {
+        margin-left: 206px;
+      }
+    }
+  }
+}
+

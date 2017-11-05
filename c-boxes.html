@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900,700,400italic" rel="stylesheet">
+
+  <title>Ch_Startup </title>
+
+  <link rel="stylesheet" href="modules/pe-icon-7-stroke/Pe-icon-7-stroke.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="charming/dist/css/charming.min.css">
+
+  <!-- Some custom CSS for this example page -->
+  <link rel="stylesheet" href="css/example.css">
+
+</head>
+<body>
+
+  <div class="container">
+    <nav class="navbar charming-navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+              data-target="#navbar-nav"
+              aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a href="index.html" class="navbar-brand mr-5">
+
+        <img class="navbar-brand-logo" src="assets/images/logo_dark.png" srcset="assets/images/logo_dark.png 264w, assets/images/logo_dark@2x.png 528w" sizes="264px" alt="Charming Logo">
+
+      </a>
+
+      <div class="navbar-collapse justify-content-md-end collapse" id="navbar-nav">
+        <ul class="navbar-nav charming-mobile-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown-menu-link-1"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Layouts
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbar-dropdown-menu-link-1">
+              <a href="index.html" class="dropdown-item">Landing Page 1</a>
+              <a href="landing-page.html" class="dropdown-item">Landing Page 2</a>
+              <a href="blog.html" class="dropdown-item">Blog</a>
+              <a href="blog-inner.html" class="dropdown-item">Blog Article</a>
+              <a href="pricing.html" class="dropdown-item">Pricing</a>
+              <a href="about-us.html" class="dropdown-item">About Us</a>
+              <a href="contact.html" class="dropdown-item">Contact</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com"
+               id="navbar-dropdown-menu-link-2" data-toggle="dropdown" aria-haspopup="true"
+               aria-expanded="false">
+              Account Pages
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbar-dropdown-menu-link-2">
+              <a href="a-login.html" class="dropdown-item">Login</a>
+              <a href="a-logout.html" class="dropdown-item">Logout</a>
+              <a href="a-signup.html" class="dropdown-item">Sign up</a>
+              <a href="a-signup_validation.html" class="dropdown-item">Signup validation</a>
+              <a href="a-reset-password.html" class="dropdown-item">Reset password</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown-menu-link-3"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              HTTP Errors
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbar-dropdown-menu-link-3">
+              <a href="e-400.html" class="dropdown-item">400 Bad request</a>
+              <a href="e-401.html" class="dropdown-item">401 Unauthorized</a>
+              <a href="e-403.html" class="dropdown-item">403 Forbidden</a>
+              <a href="e-404.html" class="dropdown-item">404 Not found</a>
+              <a href="e-405.html" class="dropdown-item">405 Method not allowed</a>
+              <a href="e-418.html" class="dropdown-item">418 I'm a teapot</a>
+              <a href="e-500.html" class="dropdown-item">500 Internal server error</a>
+              <a href="e-502.html" class="dropdown-item">502 Bad gateway</a>
+              <a href="e-503.html" class="dropdown-item">503 Service unavailable</a>
+              <a href="e-504.html" class="dropdown-item">504 Gateway Time-out</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown-menu-link-4"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Components
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbar-dropdown-menu-link-4">
+              <a href="c-boxes.html" class="dropdown-item">Boxes</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="../dashboard/" class="nav-link">Dashboard Demo</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+
+  <header class="block block-dark text-center block-bb block-bt bg-gradient-1">
+    <h2 class="block-title">Boxes</h2>
+    <h5 class="block-subtitle">Versatile card-like boxes to display content</h5>
+  </header>
+
+
+  <section class="block block-bb">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          Boxes are versatile components that can be used to display a myriad of different content.
+          From information boxes, to comments, to testimonials, to blog teasers. A lot of pages
+          make use of the fundamental box component.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block block-bb">
+    <div class="container">
+      <div class="block-heading">
+        <h2 class="block-title">Simple boxes</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="box box-b box-block mb-2">
+            <h2>Headless box</h2>
+            <span>
+              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adisci
+              velit, sed quia non numqu am eius modi tempora incidunt ut labore et dolore magnam
+              aliquam quaerat magni dolores eos qui ratione voluptatem.
+            </span>
+          </div>
+
+          <div class="box box-b mb-2">
+            <div class="box-block box-rounded-top box-bb">
+              <h3>Headless box</h3>
+              <span>
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adisci
+                velit, sed quia non numqu am eius modi tempora incidunt ut labore et dolore magnam
+                aliquam quaerat magni dolores eos qui ratione voluptatem.
+              </span>
+            </div>
+
+            <div class="box-block">
+              <h3>With two blocks</h3>
+              <span>
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adisci
+                velit, sed quia non numqu am eius modi tempora incidunt ut labore et dolore magnam
+                aliquam quaerat magni dolores eos qui ratione voluptatem.
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-4">
+          <div class="box mb-2">
+            <div class="box-head box-head-sm box-head-accent-2"></div>
+            <div class="box-block box-bx box-bb">
+              <h2>With small head</h2>
+              <span>
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adisci
+                velit, sed quia non numqu am eius modi tempora incidunt ut labore et dolore magnam
+                aliquam quaerat magni dolores eos qui ratione voluptatem.
+              </span>
+            </div>
+          </div>
+
+          <div class="box mb-2">
+            <div class="box-head box-head-accent-2"></div>
+            <div class="box-block box-bx box-bb">
+              <h2>With default head</h2>
+              <span>
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adisci
+                velit, sed quia non numqu am eius modi tempora incidunt ut labore et dolore magnam
+                aliquam quaerat magni dolores eos qui ratione voluptatem.
+              </span>
+            </div>
+          </div>
+
+          <div class="box mb-2">
+            <div class="box-head box-head-lg box-head-accent-2"></div>
+            <div class="box-block box-bx box-bb">
+              <h2>With large head</h2>
+              <span>
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adisci
+                velit, sed quia non numqu am eius modi tempora incidunt ut labore et dolore magnam
+                aliquam quaerat magni dolores eos qui ratione voluptatem.
+              </span>
+            </div>
+          </div>
+
+          <div class="box mb-2">
+            <div class="box-head box-head-accent-1"></div>
+            <div class="box-block box-bx box-bb">
+              <h3>Some simple box</h3>
+              <span>
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adisci
+                velit, sed quia non numqu am eius modi tempora incidunt ut labore et dolore magnam
+                aliquam quaerat magni dolores eos qui ratione voluptatem.
+              </span>
+            </div>
+
+            <div class="box-block box-bx box-bb">
+              <h3>With two blocks</h3>
+              <span>
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adisci
+                velit, sed quia non numqu am eius modi tempora incidunt ut labore et dolore magnam
+                aliquam quaerat magni dolores eos qui ratione voluptatem.
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+          <div class="box box-b mb-2">
+            <div class="box-head box-head-sm box-bb">
+              <h3>Small titled head</h3>
+            </div>
+            <div class="box-block">
+              <span>
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adisci
+                velit, sed quia non numqu am eius modi tempora incidunt ut labore et dolore magnam
+                aliquam quaerat magni.
+              </span>
+            </div>
+          </div>
+
+          <div class="box box-b mb-2">
+            <div class="box-head box-bb">
+              <h3>Default titled head</h3>
+            </div>
+            <div class="box-block">
+              <span>
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adisci
+                velit, sed quia non numqu am eius modi tempora incidunt ut labore et dolore magnam
+                aliquam quaerat magni.
+              </span>
+            </div>
+          </div>
+
+          <div class="box box-b mb-2">
+            <div class="box-head box-head-lg box-bb">
+              <h3>Large titled head</h3>
+            </div>
+            <div class="box-block">
+              <span>
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adisci
+                velit, sed quia non numqu am eius modi tempora incidunt ut labore et dolore magnam
+                aliquam quaerat magni dolores eos qui ratione voluptatem.
+              </span>
+            </div>
+          </div>
+
+          <div class="box mb-2">
+            <div class="box-head box-head-accent-1">
+              <h3>Accent titled head</h3>
+            </div>
+            <div class="box-block box-bx box-bb">
+              <span>
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adisci
+                velit, sed quia non numqu am eius modi tempora incidunt ut labore et dolore magnam
+                aliquam quaerat magni dolores eos qui ratione voluptatem.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block block-bb">
+    <div class="container">
+
+      <div class="block-heading">
+        <h2 class="block-title">Boxes as comments / balloons</h2>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="box box-b box-block mb-2">
+            <div class="box-comment-info">
+              <img src="assets/images/blogcommentavatar1.png" alt="Howard Thomas Avatar"
+                   class="mr-1">
+              <div>
+                <div class="box-comment-author">
+                  Howard Thomas
+                </div>
+                <div>
+                  May 17, 2017 - <a href="#">Reply</a>
+                </div>
+              </div>
+            </div>
+            <div class="mt-2">
+              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adisci
+              velit, sed quia non numqu am eius modi tempora incidunt ut labore et dolore magnam
+              aliquam quaerat magni dolores eos qui ratione voluptatem.
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="box box-b box-block mb-2">
+            <div class="box-comment-info">
+              <img src="assets/images/blogcommentavatar1.png" alt="Howard Thomas Avatar"
+                   class="mr-1">
+              <div>
+                <div class="box-comment-author">
+                  Howard Thomas
+                </div>
+                <div>
+                  May 17, 2017 - <a href="#">Reply</a>
+                </div>
+              </div>
+            </div>
+            <div class="mt-2">
+              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adisci
+              velit, sed quia non numqu am eius modi tempora incidunt ut labore et dolore magnam
+              aliquam quaerat magni dolores eos qui ratione voluptatem.
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="box box-b box-block mb-2">
+            <div class="box-comment-info">
+              <img src="assets/images/blogcommentavatar1.png" alt="Howard Thomas Avatar"
+                   class="mr-1">
+              <div>
+                <div class="box-comment-author">
+                  Howard Thomas
+                </div>
+                <div>
+                  May 17, 2017 - <a href="#">Reply</a>
+                </div>
+              </div>
+            </div>
+            <div class="mt-2">
+              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adisci
+              velit, sed quia non numqu am eius modi tempora incidunt ut labore et dolore magnam
+              aliquam quaerat magni dolores eos qui ratione voluptatem.
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row my-5">
+
+        <div class="col-md-4 mb-2">
+          <div class="box">
+            <div class="box-head box-head-accent-1"></div>
+            <div class="box-block box-bx box-bb box-balloon">
+              Product XU3a has saved me so much trouble. It’s worth every penny. I don’t know
+              how I ever managed without it.
+
+              <div class="box-balloon-triangle"> </div>
+            </div>
+
+          </div>
+          <div class="balloon-author">
+            <div class="balloon-author-photo">
+              <img src="assets/images/avatar1.jpeg" alt="Author">
+              <div class="balloon-author-photo-shadow"></div>
+            </div>
+            <div class="balloon-author-name">Willie Williamson</div>
+            <div class="balloon-author-position">Ceo at Will.I.Amson</div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-2">
+          <div class="box">
+            <div class="box-head box-head-accent-1"></div>
+            <div class="box-block box-bx box-bb box-balloon">
+              Product XU3a has saved me so much trouble. It’s worth every penny. I don’t know
+              how I ever managed without it.
+
+              <div class="box-balloon-triangle"> </div>
+            </div>
+
+          </div>
+          <div class="balloon-author">
+            <div class="balloon-author-photo">
+              <img src="assets/images/avatar1.jpeg" alt="Author">
+              <div class="balloon-author-photo-shadow"></div>
+            </div>
+            <div class="balloon-author-name">Willie Williamson</div>
+            <div class="balloon-author-position">Ceo at Will.I.Amson</div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-2">
+          <div class="box">
+            <div class="box-head box-head-accent-1"></div>
+            <div class="box-block box-bx box-bb box-balloon">
+              Product XU3a has saved me so much trouble. It’s worth every penny. I don’t know
+              how I ever managed without it.
+
+              <div class="box-balloon-triangle"> </div>
+            </div>
+
+          </div>
+          <div class="balloon-author">
+            <div class="balloon-author-photo">
+              <img src="assets/images/avatar1.jpeg" alt="Author">
+              <div class="balloon-author-photo-shadow"></div>
+            </div>
+            <div class="balloon-author-name">Willie Williamson</div>
+            <div class="balloon-author-position">Ceo at Will.I.Amson</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="block block-bb">
+    <div class="container">
+
+      <div class="block-heading">
+        <h2 class="block-title">Boxes as teaser or form</h2>
+      </div>
+
+      <div class="row my-5">
+
+        <div class="col-md-6 mb-2">
+
+          <article class="box">
+
+            <div class="box-head box-head-accent-1 box-head-lg"></div>
+            <div class="box-banner">
+              <img src="assets/images/blog-banner-1.jpg" alt="Banner Image">
+            </div>
+
+            <div class="box-block box-b box-bt-0 box-block-padded">
+
+              <h2 class="box-block-teaser-title">
+                <a href="blog-inner.html">Coding on Ubuntu for .NET developers</a>
+              </h2>
+              <div class="box-block-teaser-subtitle">May 17th, 2017 by Cehryl Ford</div>
+
+              <div class="box-block-teaser-text">
+                This is a blog <a href="#">post teaser</a>, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+
+              <div class="box-block-teaser-sub">
+                <span class="icon-with-label">
+                  <a href="#" class="link-soft">
+                    <span class="fa fa-thumbs-o-up icon icon-sm"></span>
+                  </a>
+                  <span class="icon-with-label-text">67</span>
+                </span>
+
+                <span class="icon-with-label">
+                  <a href="#" class="link-soft">
+                    <span class="fa fa-comment-o icon icon-sm"></span>
+                  </a>
+                  <span class="icon-with-label-text">24</span>
+                </span>
+
+                <a href="blog-inner.html" class="btn btn-icon btn-accent-1 ml-auto">
+                  <span class="icon icon-sm fa fa-plus-circle"></span>
+                  <span class="btn-icon-label">Read this post</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="col-md-6">
+          <div class="box">
+            <div class="box-head box-head-accent-1"></div>
+            <form>
+              <div class="box-block box-bx">
+                <h3 class="mb-2">Log in</h3>
+                <div class="form-group">
+                  <label class="col-form-label" for="example-input-username1">Username</label>
+                  <input type="text" class="form-control form-control-lg"
+                         id="example-input-username1">
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label" for="example-input-password1">Password</label>
+                  <input type="password" class="form-control form-control-lg" id="example-input-password1">
+                </div>
+                <div class="form-group mb-0">
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Keep me logged in.</span>
+                  </label>
+                </div>
+              </div>
+              <div class="box-block box-block-actions box-b">
+                <a href="a-reset-password.html">Forgot your password?</a>
+                <button type="submit" class="btn btn-md btn-accent-1">Continue</button>
+              </div>
+            </form>
+          </div>
+          <div class="mt-h">
+            <span class="float-sm-right">Don't have an account? <a href="a-signup.html">Sign up here</a></span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="block block-bb">
+    <div class="container">
+
+      <div class="block-heading">
+        <h2 class="block-title">Boxes with tables</h2>
+      </div>
+
+      <div class="row my-5">
+        <div class="col-md-12">
+          <div class="box box-b">
+            <table class="box-table table">
+              <thead>
+              <tr>
+                <th class="table-col-checkbox">
+                  <input type="checkbox" value="option-1">
+                </th>
+                <th>Name</th>
+                <th>Material</th>
+                <th>Algorithm</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>
+                  <input type="checkbox" value="option-1">
+                </td>
+                <td><a href="details.html">My first job</a></td>
+                <td>InGaAs</td>
+                <td class="table-td-select">
+                  <select class="form-control" id="example-select-2">
+                    <option>Birkhoff interpolation</option>
+                    <option>Cubic interpolation</option>
+                    <option>Cubic interpolation</option>
+                    <option>Cubic interpolation</option>
+                    <option>Cubic interpolation</option>
+                    <option>Cubic interpolation</option>
+                  </select>
+                </td>
+                <td class="table-td-progress">
+                  <div class="progress">
+                    <div class="progress-bar bg-success w-25" role="progressbar" aria-valuenow="25"
+                         aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="table-td-buttons">
+                  <a href="#" class="btn btn-icon btn-success btn-sm">
+                    <span class="icon icon-xs fa fa-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-icon btn-danger btn-sm">
+                    <span class="icon icon-xs fa fa-stop"></span>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" value="option-1">
+                </td>
+                <td><a href="details.html">My first job</a></td>
+                <td>InGaAs</td>
+                <td class="table-td-select">
+                  <select class="form-control" id="example-select-3">
+                    <option>Birkhoff interpolation</option>
+                    <option>Cubic interpolation</option>
+                    <option>Cubic interpolation</option>
+                    <option>Cubic interpolation</option>
+                    <option>Cubic interpolation</option>
+                    <option>Cubic interpolation</option>
+                  </select>
+                </td>
+                <td class="table-td-progress">
+                  <div class="progress">
+                    <div class="progress-bar bg-success w-25" role="progressbar" aria-valuenow="25"
+                         aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="table-td-buttons">
+                  <a href="#" class="btn btn-icon btn-success btn-sm">
+                    <span class="icon icon-xs fa fa-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-icon btn-danger btn-sm">
+                    <span class="icon icon-xs fa fa-stop"></span>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" value="option-1">
+                </td>
+                <td><a href="details.html">My first job</a></td>
+                <td>InGaAs</td>
+                <td class="table-td-select">
+                  <select class="form-control" id="example-select-4">
+                    <option>Birkhoff interpolation</option>
+                    <option>Cubic interpolation</option>
+                    <option>Cubic interpolation</option>
+                    <option>Cubic interpolation</option>
+                    <option>Cubic interpolation</option>
+                    <option>Cubic interpolation</option>
+                  </select>
+                </td>
+                <td class="table-td-progress">
+                  <div class="progress">
+                    <div class="progress-bar bg-success w-25" role="progressbar" aria-valuenow="25"
+                         aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="table-td-buttons">
+                  <a href="#" class="btn btn-icon btn-success btn-sm">
+                    <span class="icon icon-xs fa fa-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-icon btn-danger btn-sm">
+                    <span class="icon icon-xs fa fa-stop"></span>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" value="option1">
+                </td>
+                <td><a href="details.html">My first job</a></td>
+                <td>InGaAs</td>
+                <td class="table-td-select">
+                  <select class="form-control" id="example-select-5">
+                    <option>Birkhoff interpolation</option>
+                    <option>Cubic interpolation</option>
+                    <option>Cubic interpolation</option>
+                    <option>Cubic interpolation</option>
+                    <option>Cubic interpolation</option>
+                    <option>Cubic interpolation</option>
+                  </select>
+                </td>
+                <td class="table-td-progress">
+                  <div class="progress">
+                    <div class="progress-bar bg-success w-25" role="progressbar" aria-valuenow="25"
+                         aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="table-td-buttons">
+                  <a href="#" class="btn btn-icon btn-success btn-sm">
+                    <span class="icon icon-xs fa fa-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-icon btn-danger btn-sm">
+                    <span class="icon icon-xs fa fa-stop"></span>
+                  </a>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Overlaying two blocks-->
+  <div class="block block-dark pb-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10  col-xl-8 mx-auto">
+
+          <div class="box">
+            <div class="box-head box-head-accent-1"></div>
+
+            <div class="box-block box-block-padded box-bx box-bb box-rounded-0">
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block pt-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto col-xl-8">
+
+          <div class="box">
+            <div class="box-block box-bx box-block-padded">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+
+            </div>
+
+            <div class="box-block box-block-padded box-block-codesample">
+              <!-- formatted with rouge, with a pygments color scheme -->
+              <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">Person</span><span class="p">(</span><span class="nx">name</span><span class="p">){</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">getName</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="kd">var</span> <span class="nx">person</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"George"</span><span class="p">);</span></code></pre></figure>
+
+            </div>
+
+            <div class="box-block box-block-padded box-bx box-bb">
+              <p>
+                In voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
+                ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                amet,
+                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                dolore magnam aliquam quaerat voluptatem.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Overlaying two blocks with a blog header-->
+  <div class="block block-dark pb-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-xl-8 mx-auto">
+
+          <div class="box text-center">
+            <div class="box-head box-head-accent-3 pt-3">
+              <h1 class="blog-header-title">
+              <span class="blog-header-title-small">
+                The .NET developer's guide to
+              </span>
+                <span class="blog-header-title-huge">
+                Coding in JavaScript
+              </span>
+              </h1>
+
+              <span class="blog-header-byline">
+                by
+              </span>
+              <span class="blog-header-author">
+                Russel Ray
+            </span>
+
+              <div class="blog-header-social">
+                <a href="#">
+                  <span class="fa fa-facebook-square icon"></span>
+                </a>
+                <a href="#">
+                  <span class="fa fa-twitter-square icon"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block pt-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-xl-8 mx-auto">
+
+          <div class="box">
+            <div class="box-block box-bx box-bb box-block-padded">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block block-bt block-dark block-with-pricing text-center">
+    <h3 class="block-title">Boxes as pricing tables</h3>
+    <h5 class="block-subtitle">With a block overlap</h5>
+  </div>
+
+  <!--Pricing tables-->
+  <div class="block">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-4 offset-lg-2 offset-xl-0 col-sm-6 col-vstretch">
+          <div class="box box-vstretch mb-4 pricing-with-block">
+            <div class="box-head box-head-accent-1 box-head-pricing">NGO / Charity</div>
+            <div class="box-block p-0 box-bx box-block-vstretch">
+              <span class="box-price">Free</span>
+              <ul class="box-list">
+                <li>A cool feature</li>
+                <li>Another cool feature</li>
+              </ul>
+            </div>
+            <div class="box-block box-b box-bt-0 text-center p-1">
+              <a class="btn btn-accent-2 btn-md" href="#">Buy now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-sm-6 col-vstretch">
+          <div class="box box-vstretch mb-4 pricing-with-block">
+            <div class="box-head box-head-accent-1 box-head-pricing">Starting up</div>
+
+              <div class="box-block p-0 box-bx box-block-vstretch">
+                <span class="box-price">
+                  <span class="box-price-superscript">$</span>
+                  179
+                  <!--<span class="pct-subscript">per month</span>-->
+                </span>
+              <ul class="box-list">
+                <li>A professional feature</li>
+                <li>This is not for amateurs</li>
+                <li>400 units</li>
+                <li>Only the best units</li>
+              </ul>
+            </div>
+            <div class="box-block box-b box-bt-0 text-center p-1">
+              <a class="btn btn-accent-2 btn-md" href="#">Buy now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 offset-lg-2 offset-xl-0 col-sm-6 col-vstretch">
+          <div class="box box-vstretch mb-4 pricing-with-block">
+            <div class="box-head box-head-accent-1 box-head-pricing">Growing</div>
+            <div class="box-block p-0 box-bx box-block-vstretch">
+              <span class="box-price">
+              <span class="box-price-superscript">$</span>
+              179
+                <!--<span class="pct-subscript">per month</span>-->
+              </span>
+              <ul class="box-list">
+                <li>A professional feature</li>
+                <li>This is not for amateurs</li>
+                <li>400 units</li>
+                <li>Only the best units</li>
+              </ul>
+            </div>
+
+            <div class="box-block box-b box-bt-0 text-center p-1">
+              <a class="btn btn-accent-2 btn-md" href="#">Buy now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-sm-6 col-vstretch">
+          <div class="box box-vstretch mb-4 pricing-with-block">
+            <div class="box-head box-head-accent-3 box-head-pricing">Tycoon</div>
+            <div class="box-block p-0 box-bx box-block-vstretch">
+              <span class="box-price">
+              <span class="box-price-superscript">$</span>
+              179
+                <!--<span class="pct-subscript">per month</span>-->
+              </span>
+              <ul class="box-list">
+                <li>A professional feature</li>
+                <li>This is not for amateurs</li>
+                <li>This is not for amateurs</li>
+                <li>This is not for amateurs</li>
+                <li>This is not for amateurs</li>
+                <li>This is not for amateurs</li>
+                <li>This is not for amateurs</li>
+                <li>400 units</li>
+                <li>Only the best units</li>
+              </ul>
+            </div>
+
+            <div class="box-block box-b box-bt-0 text-center p-1">
+              <a class="btn btn-accent-3 btn-md" href="#">Buy now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer id="footer" class="ftr ftr-dark text-center">
+    <div class="container ftr-columns">
+      <div class="row">
+        <div class="col-md-2 ml-auto col-sm-4">
+          <h5 class="ftr-column-title">Company</h5>
+          <ul class="ftr-column-list">
+            <li><a href="#">Team</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <h5 class="ftr-column-title">Company</h5>
+          <ul class="ftr-column-list">
+            <li><a href="#">Team</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mr-auto col-sm-4">
+          <h5 class="ftr-column-title">Company</h5>
+          <ul class="ftr-column-list">
+            <li><a href="#">Team</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mx-auto ftr-bt ftr-oneline">
+          ©  Your Company • <a href="#">Terms</a> • <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="charming/dist/js/bootstrap.min.js"></script>
+  <script src="charming/dist/js/charming.min.js"></script>
+</body>
+</html>
+

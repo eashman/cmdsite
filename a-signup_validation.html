@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900,700,400italic" rel="stylesheet">
+
+  <title>Ch_Startup  - Validation error</title>
+
+  <link rel="stylesheet" href="modules/pe-icon-7-stroke/Pe-icon-7-stroke.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="charming/dist/css/charming.min.css">
+
+  <!-- Some custom CSS for this example page -->
+  <link rel="stylesheet" href="css/example.css">
+
+</head>
+<body class="bg-accent-2">
+
+  <div class="text-center p-4">
+    <a href="index.html">
+      <img src="assets/images/logo_white.png" srcset="assets/images/logo_white.png 265w, assets/images/logo_white@2x.png 530w" sizes="265px" alt="Charming Logo">
+    </a>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mx-auto pb-4">
+        <div class="box">
+          <div class="box-head box-head-accent-1"></div>
+          <div class="box-block">
+            <form>
+              <h3 class="mb-2">Sign up</h3>
+              <div class="form-group">
+                <label class="col-form-label" for="example-input-username1">Username</label>
+                <input type="text"
+                       class="form-control form-control-lg is-invalid"
+                       id="example-input-username1"
+                       placeholder="150 characters or less. Letters, digits and @.+-_"
+                       required
+                       autofocus>
+                <div class="invalid-feedback">The username you've entered does not meet our
+                  requirements.
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-form-label" for="example-input-email1">Email address</label>
+                <input type="email" class="form-control form-control-lg" id="example-input-email1"
+                       placeholder="We will never share your email with anyone else.">
+              </div>
+              <div class="form-group">
+                <label class="col-form-label" for="example-input-password1">Password</label>
+                <input type="password" class="form-control form-control-lg" id="example-input-password1"
+                       required>
+              </div>
+            </form>
+          </div>
+
+          <div class="box-block box-bt">
+            <div class="row">
+              <div class="col-md-8">
+                <span class="text-muted">By signing up for Charming, you agree to our <a href="#">terms of service</a> and <a
+                          href="#">privacy policy</a>.</span>
+              </div>
+
+              <div class="col-md-4">
+                <button type="submit" class="btn btn-md btn-accent-1">Continue</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <span class="float-right text-white mt-h">Already a member? <a
+            href="a-login.html">Log in here</a></span>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="charming/dist/js/bootstrap.min.js"></script>
+  <script src="charming/dist/js/charming.min.js"></script>
+</body>
+</html>
+

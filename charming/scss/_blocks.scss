@@ -1,0 +1,73 @@
+.block {
+  // Horizontal Module
+  background: linear-gradient(to bottom, $block-bg-gstart 0%, $block-bg-gstop 100%);
+  //padding: $block-padding ($block-padding / 2);
+  padding: $block-padding 0;
+
+  @include media-breakpoint-up(sm) {
+    //padding: ($block-padding * 2) $block-padding;
+    padding: ($block-padding * 2) 0;
+  }
+
+  .container & {
+    // If it's a child of a container we give it a nice round edge
+    border-radius: $border-radius;
+  }
+}
+
+.block-bb {
+  border-bottom: 2px solid $block-border;
+}
+
+.block-bt {
+  border-top: 2px solid $block-border;
+}
+
+.block-heading {
+  margin-bottom: $spacer * 6;
+  text-align: center;
+}
+
+.block-title {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.block-subtitle {
+  margin-bottom: 0;
+}
+
+.block-dark {
+  @include bg-gradient($block-dark-gstart, $block-dark-gstop);
+  color: $block-dark-text;
+}
+
+// A semi-transparent banner at the bottom of the block
+.block-callout {
+  background-color: $block-callout-bg;
+  padding: 1.5rem;
+}
+
+// Block on a (vertical) diet
+.block-sm {
+  padding-bottom: $block-padding / 2;
+  padding-top: $block-padding / 2;
+
+  @include media-breakpoint-up(sm) {
+    // For clarity: Default block is $block-padding * 2 on this size
+    padding-bottom: $block-padding;
+    padding-top: $block-padding;
+  }
+}
+
+.block-lg {
+  padding-bottom: $block-padding;
+  padding-top: $block-padding;
+
+  @include media-breakpoint-up(sm) {
+    // For clarity: Default block is $block-padding * 2 on this size
+    padding-bottom: $block-padding * 3;
+    padding-top: $block-padding * 3;
+  }
+}
+

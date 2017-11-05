@@ -1,0 +1,66 @@
+@mixin merits-variant($merits-gstart, $merits-gstop, $merits-text, $merits-separator, $merits-icon) {
+  @include bg-gradient($merits-gstart, $merits-gstop);
+  color: $merits-text;
+
+  .merits-merit {
+    border-color: $merits-separator;
+  }
+
+  .merits-icon {
+    color: $merits-icon;
+  }
+
+  .merits-item {
+    border-color: $merits-separator;
+  }
+}
+
+// Merits
+.merits {
+  padding: 48px 0;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding-bottom: $spacer;
+    text-transform: uppercase;
+  }
+}
+
+.merits-item {
+  border-left: 1px solid transparent;
+  min-height: 200px;
+  padding: 30px 40px;
+  padding-left: 40px;
+
+  @include media-breakpoint-down(lg) {
+    border-left: 0;
+  }
+
+  &:first-child {
+    border-left: 0;
+  }
+
+  &:last-child {
+    border-right: 0;
+  }
+}
+
+.merits-icon {
+  display: inline-block;
+  font-size: 75px;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.merits-light {
+  @include merits-variant($merits-light-gstart, $merits-light-gstop, $merits-light-text, $merits-light-separator, $merits-light-icon);
+}
+
+.merits-dark {
+  @include merits-variant($merits-dark-gstart, $merits-dark-gstop, $merits-dark-text, $merits-dark-separator, $merits-dark-icon);
+}

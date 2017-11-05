@@ -1,0 +1,134 @@
+.call-us {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-up(sm) {
+    flex-direction: row;
+  }
+}
+
+.call-us-avatar {
+  flex-shrink: 0;
+  margin-bottom: $spacer * 3;
+
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 0;
+    margin-right: $spacer * 3;
+  }
+}
+
+$team-avatar-border: #c7c8cc;
+$team-avatar-shadow: rgba(45, 45, 45, .17);
+
+.team-member {
+  margin-bottom: $spacer * 4;
+  text-align: center;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 0;
+  }
+}
+
+.team-avatar {
+  border: 6px solid $team-avatar-border;
+  border-radius: 100px;
+  box-shadow: 7px 7px 118px 14px $team-avatar-shadow;
+}
+
+.team-member-text {
+  margin-top: $spacer;
+
+  h3 {
+    margin-bottom: 0;
+  }
+}
+
+.skill {
+  display: flex;
+}
+
+.skill-icon {
+  margin-right: $spacer * 1;
+}
+
+.logos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  img {
+    margin: $spacer * 2;
+  }
+}
+
+.iconchunk {
+  display: flex;
+}
+
+.iconchunk-icon {
+  color: $body-text-soft;
+  display: inline-block;
+
+  .iconchunk-top & {
+    border: 0;
+    border-bottom: 2px solid $body-text-soft;
+    margin-bottom: $spacer;
+    padding-bottom: $spacer / 2;
+  }
+
+  .iconchunk-left & {
+    border-right: 2px solid $body-text-soft;
+    padding-right: $spacer;
+  }
+
+  .iconchunk-right & {
+    border: 0;
+    border-left: 2px solid $body-text-soft;
+    padding-left: $spacer;
+  }
+
+  .iconchunk-left &,
+  .iconchunk-right & {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.iconchunk-top {
+  align-items: center;
+  flex-direction: column;
+}
+
+.iconchunk-content {
+  .iconchunk-left & {
+    padding-left: $spacer;
+  }
+
+  .iconchunk-right & {
+    padding-right: $spacer;
+  }
+}
+
+@each $number, $colors in $accents {
+  .iconchunk-accent-#{$number} {
+    .iconchunk-icon {
+      border-color: map-get($colors, color);
+    }
+  }
+}
+
+// scss-lint:disable IdSelector
+#google-map {
+  border: 1px solid $block-border;
+  border-radius: $border-radius;
+  height: $spacer * 26;
+  // scss-lint:disable ColorVariable VendorPrefix
+  -webkit-mask-image: -webkit-radial-gradient(#fff, #000);
+  -webkit-transform: translate3d(0, 0, 0);
+  width: 100%;
+
+  > div {
+    border-radius: $border-radius;
+  }
+}

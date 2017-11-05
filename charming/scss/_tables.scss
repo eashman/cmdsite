@@ -1,0 +1,25 @@
+.table {
+  .table-td-select {
+    padding: 5px 6px;
+
+    select {
+      border: 0;
+      padding-left: 2px;
+    }
+  }
+
+  .table-col-checkbox {
+    width: 30px;
+  }
+
+  .table-td-progress {
+    .progress {
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  }
+
+  .table-td-buttons {
+    padding: 9px;
+  }
+}

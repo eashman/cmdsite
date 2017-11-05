@@ -1,0 +1,59 @@
+.box-price {
+  display: block;
+  font-size: $h1-font-size;
+  height: 72px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.box-head-pricing {
+  font-size: $h3-font-size;
+  line-height: $spacer * 3;
+  min-height: $spacer * 6;
+  text-align: center;
+}
+
+.box-price-superscript {
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: 11px;
+  vertical-align: top;
+}
+
+.box-price-subscript {
+  font-size: 1rem;
+}
+
+.box-list {
+  list-style: none;
+  margin-bottom: 0;
+  padding-bottom: $spacer * 1.5;
+  padding-right: 20px;
+
+  li::before {
+    border-color: transparent transparent transparent $pct-list-bullet;
+    border-style: solid;
+    border-width: 3px 8px;
+    content: '';
+    display: block;
+    left: -20px;
+    position: relative;
+    top: 15px;
+    width: 8px;
+  }
+}
+
+.block-with-pricing {
+  margin-bottom: $spacer * 3;
+
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 0;
+    padding-bottom: $spacer * 10;
+  }
+}
+
+.pricing-with-block {
+  @include media-breakpoint-up(xl) {
+    margin-top: -122px;
+  }
+}

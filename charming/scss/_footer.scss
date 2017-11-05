@@ -1,0 +1,70 @@
+@mixin ftr-variant($ftr-text, $ftr-bg, $ftr-separator, $ftr-highlight) {
+  color: $ftr-text;
+  background-color: $ftr-bg;
+  border-color: $ftr-separator;
+
+  .ftr-bb {
+    border-color: $ftr-separator;
+  }
+
+  .ftr-bt {
+    border-color: $ftr-separator;
+  }
+
+  .ftr-column-title {
+    color: $ftr-highlight;
+  }
+
+  a,
+  a:hover,
+  a:link {
+    color: $ftr-text;
+  }
+
+  .ftr-oneline {
+    color: $ftr-highlight;
+
+    a,
+    a:hover,
+    a:link {
+      color: $ftr-highlight;
+    }
+  }
+}
+
+.ftr-oneline {
+  padding: ($spacer * 2) 0;
+}
+
+.ftr-columns {
+  padding-bottom: ($spacer * 6);
+  padding-top: ($spacer * 6);
+}
+
+.ftr-bb {
+  border-bottom: 1px solid transparent;
+}
+
+.ftr-bt {
+  border-top: 1px solid transparent;
+}
+
+.ftr-column-list {
+  list-style: none;
+  padding-left: 0;
+  padding-top: $spacer * 2;
+}
+
+.ftr-dark {
+  @include ftr-variant($ftr-dark-text,
+          $ftr-dark-bg,
+          $ftr-dark-separator,
+          $ftr-dark-highlight);
+}
+
+.ftr-light {
+  @include ftr-variant($ftr-light-text,
+                       $ftr-light-bg,
+                       $ftr-light-separator,
+                       $ftr-light-highlight);
+}

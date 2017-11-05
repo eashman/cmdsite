@@ -1,0 +1,146 @@
+// Navigation
+
+
+// this is a temporary solution until BS4 mobile nav stuff is a bit more fixed (beta or so)
+
+// Bootstrap overrides for navbar
+.charming-navbar {
+  // bootstrap 4 doesn't handle a nav with only a menu button very well
+  min-height: 70px;
+  padding-left: 0;
+  padding-right: 0;
+
+  .navbar-toggler-right {
+    right: 0;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      padding-bottom: .625rem;
+      padding-top: .625rem;
+
+      &.active {
+        font-weight: bold;
+      }
+    }
+
+    .nav-item + .nav-item {
+      // Termporary "dirty" until Bootstrap nav becomes a solid foundation
+      @include media-breakpoint-up(lg) {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  .navbar-brand {
+    font-size: 1.5625rem;
+    font-weight: bold;
+    line-height: $line-height-lg;
+  }
+
+  .navbar-brand-logo {
+    @include media-breakpoint-down(md) {
+      height: auto;
+      max-width: 100%;
+    }
+  }
+
+  .dropdown-toggle::after {
+    vertical-align: 3px;
+  }
+}
+
+.charming-mobile-nav {
+  @include media-breakpoint-down(md) {
+    border-radius: $border-radius;
+    margin-top: $spacer;
+    text-align: left;
+
+    .navbar-dark & {
+      background-color: $navbar-dark-mobile-nav-bg;
+
+      .nav-item {
+        &.active {
+          background-color: $navbar-dark-mobile-nav-highlight;
+        }
+      }
+
+      .dropdown-item {
+        color: $navbar-dark-color;
+
+        &.active {
+          color: $navbar-dark-color;
+        }
+      }
+
+    }
+
+    .navbar-light & {
+      background-color: $navbar-light-mobile-nav-bg;
+
+      .nav-item {
+        &.active {
+          background-color: $navbar-light-mobile-nav-highlight;
+        }
+
+        &.dropdown.show {
+          //background-color: $navbar-light-mobile-nav-highlight;
+        }
+
+      }
+
+      .dropdown-item {
+        &.active,
+        &:hover,
+        &:active,
+        &:focus {
+          color: $navbar-light-color;
+        }
+      }
+    }
+
+    .dropdown-menu {
+      background: none;
+      border: 0;
+      padding-top: 0;
+    }
+
+    .dropdown-item {
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    .nav-item {
+      //float: none;
+      padding: $spacer / 2 $spacer;
+
+      &:first-child {
+        border-radius: $border-radius $border-radius 0 0;
+      }
+
+      &:last-child {
+        border-radius: 0 0 $border-radius $border-radius;
+      }
+
+      + .nav-item {
+        // remove left margin from horizontal nav
+        margin: 0;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    // make "collapse" visible on desktop. taken from Bootstrap 3 navbar-collapse
+    &.collapse {
+      //display: block;
+    }
+  }
+}
+
+.mobile-nav-nobrand {
+  @include media-breakpoint-down(md) {
+    margin-top: 50px;
+  }
+}
+
