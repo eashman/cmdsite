@@ -8,10 +8,10 @@
 // Used to generate: bg-accent-X, text-accent-X, ...
 $accents: (
   1: (
-    color: #31a742,
-    border: #239834,
-    gstart: #34bc48,
-    gstop: #2caa3f,
+    color: #008c99,
+    border: #005662,
+    gstart: #006d7a,
+    gstop: #0099a6,
     contrast: #fff
   ),
   2: (
@@ -38,8 +38,8 @@ $gradients: (
     gstop: #444860
   ),
   2: (
-    gstart: #35bd49,
-    gstop: #7ec989
+    gstart: #008c99,
+    gstop: #00b1be
   ),
   98: (
     // Dashboard background up for changes
@@ -57,7 +57,7 @@ $dark-gstart: #353844 !default;
 $dark-gstop: #444860 !default;
 $dark-contrast: #fff !default;
 $dark-separator: #4e5161 !default;
-$dark-contrast-highlight: #b8f5c3 !default;
+$dark-contrast-highlight: #00b1be !default;
 
 $navbar-dark-color: rgba(255, 255, 255, .9) !default; //BS
 $navbar-dark-hover-color: rgba(255, 255, 255, .95) !default; //BS
@@ -68,7 +68,7 @@ $light-gstart: #fff !default;
 $light-gstop: #f9f9f9 !default;
 $light-contrast: #343434 !default;
 $light-separator: #c8c8c8 !default;
-$light-contrast-highlight: #31a742 !default;
+$light-contrast-highlight: #008c99 !default;
 
 // -------------- Component colors ------------------- //
 // Blocks
@@ -154,7 +154,7 @@ $merits-dark-gstart: $dark-gstart !default;
 $merits-dark-gstop: $dark-gstop !default;
 $merits-dark-text: $dark-contrast !default;
 $merits-dark-separator: $dark-separator !default;
-$merits-dark-icon: #35bd49 !default;
+$merits-dark-icon: #008c99 !default;
 
 $merits-light-gstart: $light-gstart !default;
 $merits-light-gstop: $light-gstop !default;
@@ -185,8 +185,8 @@ $navbar-light-mobile-nav-highlight: rgba(0, 0, 0, .10) !default;
 
 // ---------------- BOOTSTRAP --------------------------
 
-$green: #35bd49 !default;
-$cyan: #4ac1ee !default;
+$green: #008c99 !default;
+$cyan: #95a2ad !default;
 $orange: #fba91e !default;
 $red: #fa2840 !default;
 
